@@ -1,0 +1,26 @@
+workflows:
+  android-workflow:
+    name: Android Debug Build
+
+    max_build_duration: 60
+
+    environment:
+      java: 17
+
+    scripts:
+      - chmod +x gradlew
+      - ./gradlew assembleDebug
+
+    artifacts:
+      - app/build/outputs/**/*.apk
+      - app/build/outputs/**/*.aab
+
+    cache:
+      cache_paths:
+        - ~/.gradle/caches
+        - ~/.gradle/wrapper
+
+    publishing:
+      email:
+        recipients:
+          - your-email@example.com
