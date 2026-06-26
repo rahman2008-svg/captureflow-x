@@ -1,0 +1,6 @@
+{
+  "name": "CaptureFlow X",
+  "description": "CaptureFlow X is a fully offline Screen Recorder & Video Editor app. Capture high-quality recordings, edit screenshots, trim videos, and control recording parameters entirely offline with local storage.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
